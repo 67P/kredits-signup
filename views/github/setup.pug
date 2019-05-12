@@ -1,0 +1,38 @@
+html
+  head
+    title Kredits oracle
+
+  body
+    h1 Register as contributor
+
+    p Hello @#{user.login}, we are happy to have you as contributor!
+
+    form(method="post" action="/github/register")
+      label(for="address") Address
+      input(name="account" type="text" required="true" id="account")
+
+      input(type="submit" value="Register" name="register")
+
+    hr
+    h3 Don't have a wallet? Create a brain wallet
+    form(id="brain-wallet")
+      p
+        label(for="username") Username
+        input(name="username" type="text" required="true" id="username")
+      p
+        label(for="password") Password
+        input(name="password" type="password" required="true" id="password")
+
+      p(id="wallet-notice")
+
+      p never forget your username and password. Nobody can recover it.
+      p
+        input(type="submit" value="Create wallet" name="create-wallet")
+
+    script(src="/js/buffer.js")
+    script(src="/js/unorm.js")
+    script(src="/js/scrypt.js")
+    script(src="/js/ethers.min.js")
+    script(src="/js/create-brain-wallet.js")
+
+
