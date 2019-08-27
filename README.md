@@ -21,10 +21,10 @@ A Kredits oracle to signup users with their GitHub account.
     node index.js
 
 
-Make sure that the oracle wallet has enought funds and that it has the permission to `MANAGE_CONTRIBUTORS` on your DAO. 
+Make sure that the oracle wallet has enought funds and that it has the permission to `MANAGE_CONTRIBUTORS_ROLE` on your DAO. 
 The `aragon` CLI can be used to grant the permission. 
 
-    $ aragon dao acl grant [your DAO address] [your contributor app address] MANAGE_CONTRIBUTORS [your wallet address]
+    $ aragon dao acl grant [your DAO address] [your contributor app address] MANAGE_CONTRIBUTORS_ROLE [your wallet address]
 
 To get the contributor app address use `aragon dao apps`
 
